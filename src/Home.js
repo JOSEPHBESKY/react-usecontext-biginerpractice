@@ -1,13 +1,13 @@
-import React from 'react'
-import{useState,useContext}from 'react'
-import Profile from './Profile'
- import {stateContext} from './StateContex'
+import React from 'react';
+import{useState,useContext}from 'react';
+import Profile from './Profile';
+ import {stateContext} from './StateContex';
 function Home() {
-    const [name]=useState("react")
-     const {state,dispatch}=useContext(stateContext)
+    const [name]=useState("react");
+     const {state,dispatch}=useContext(stateContext);
      console.log('state',state);
      const update=()=>{
-        dispatch()
+        dispatch();
      }
   return (
     <div>Home
@@ -17,4 +17,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
